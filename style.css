@@ -78,7 +78,7 @@ body {
 
 .topic__title {
     padding-top: 24px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     margin-left: 16px;
 }
 .topic__title::before {
@@ -97,15 +97,58 @@ body {
     font-size: 28px;
 }
 
-.menu-services__link {
+.menu-service {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.service-link {
+    min-width: fit-content;
     font-size: 16px;
+    font-family: 'TT Lakes';
     line-height: 24px;
     text-decoration: none;
     color: #7E7E82;
 }
 
-.menu-services__link_focus {
-    height: 40px;
+.menu-service__link {
+    margin-left: 8px;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.menu-service__link_active {
+    background-color: #FFFFFF;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
+}
+
+.post {
+    font-family: 'TT Lakes';
+}
+
+.text {
+    margin: 8px 16px 16px 16px;
+}
+
+.visible-mobile {
+    display: none;
+}
+
+.readmore {
+    margin-left: 24px;
+    margin-bottom: 16px;
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.post_readmore-icon {
+    margin-right: 16px;
+}
+
+.post_image-content {
+    width: 320px;
 }
