@@ -5,76 +5,58 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #F8F8F8;
 }
 
-.menu-mobile {
+.topbar-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 24px;
-    position: relative;
+    grid-gap: 16px;
+    
+    padding: 24px 16px;
+    border-bottom: 1px solid #D9FFF5;
+    background-color: #FFFFFF;
 }
 
-.menu-mobile::after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    top: 100%;
-    left: 0px;
-    background-color: #D9FFF5;
-}
+.topbar-menu__stick {
+    flex-shrink: 0;
 
-.connection__connection-button_connection-visible {
-    display: none;
-}
-
-.burger {
-    margin-right: 16px;
-}
-
-.connection {
-    position: relative;
-    margin-right: 38px;
-}
-
-.connection::after {
-    content: '';
-    position: absolute;
     width: 2px;
     height: 32px;
-    top: 22%;
-    margin-left: 19px;
-    border-radius: 1px;
     background-color: #EAEAEA;
 }
 
-.services {
-    display: flex;
-}
-
-.services-visible {
-    display: none;
-}
-
-.menu-mobile__item {
-    margin-right: 16px;
-}
-
-.menu-mobile__item:last-child {
-    margin-right: 0;
-}
-
-.item-service {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 
     width: 40px;
     height: 40px;
     background-color: #FF3E79;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
+
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.connection-btn {
+    display: flex;
+    justify-content: center;
+    grid-gap: 16px;
+}
+
+.service-btn {
+    display: flex;
+    justify-content: center;
+    grid-gap: 16px;
 }
 
 .content {
@@ -82,8 +64,7 @@ body {
 }
 
 .topic__title {
-    padding-top: 24px;
-    margin-bottom: 24px;
+    position: relative;
     margin-left: 16px;
 }
 
@@ -94,7 +75,7 @@ body {
     width: 3px;
     height: 40px;
     background-color: #41F6D7;
-    left: 0px;
+    left: -16px;
 }
 
 .title {
@@ -140,14 +121,6 @@ body {
     margin: 0px 16px 16px 16px;
 }
 
-.visible-mobile {
-    display: none;
-}
-
-.visible-tablet {
-    display: none;
-}
-
 .readmore {
     margin-top: 16px;
     margin-left: 24px;
@@ -165,53 +138,55 @@ body {
     width: 320px;
 }
 
+/* service styling */
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.connection-display-none-mobile {
+    display: none;
+}
+
+.topbar-menu__stick--display-none-mobile {
+    display: none;
+}
+
+.service-btn-display-desktop {
+    display: none;
+}
+
+.display-none-mobile {
+    display: none;
+}
+
+.display-none-tablet {
+    display: none;
+}
+
 @media (min-width: 768px) {
-    .menu-mobile {
-        justify-content: space-between;
-    }
-
-    .connection {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .connection::before {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 32px;
-        top: 22%;
-        left: -4%;
-        border-radius: 1px;
-        background-color: #EAEAEA;
-    }
-
-    .connection::after {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 32px;
-        top: 22%;
-        left: 102%;
-        border-radius: 1px;
-        background-color: #EAEAEA;
-    }
-
-    .connection__connection-button_connection-visible {
-        display: flex;
-    }
-
-    .connection__connection-button {
-        margin-left: 240px;
-    }
-
-    .services-visible {
-        display: none;
+    .topbar-menu {
+        padding: 24px;
+        grid-gap: 20px;
     }
 
     .visible-mobile {
         display: inline;
+    }
+
+    .connection-display-none-mobile {
+        display: flex;
+    }
+
+    .logotype-link {
+        display: flex;
+        flex-basis: 180%;
+    }
+
+    .topbar-menu__stick--display-none-mobile {
+        display: flex;
     }
 
     .post {
@@ -227,7 +202,7 @@ body {
 }
 
 @media (min-width: 1120px) {
-    .menu-mobile {
+    .topbar-menu {
         display: none;
     }
 
@@ -235,13 +210,41 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        padding-right: 32px;
     }
 
-    .services {
-        align-items: center;
+    .topic__title {
+        margin-left: 30px;
     }
 
-    .services-visible {
+    .topic__title::before {
+        left: -30px;
+    }
+
+    .btn {
+        justify-content: flex-end;
+    }
+
+    .service-btn {
+        grid-gap: 160px;
+    }
+
+    .btn__text {
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        font-weight: 600;
+
+        position: absolute;
+        white-space: nowrap;
+        transform: translateX(-42px);
+    }
+
+    .btn__img {
+        margin-right: 5px;
+    }
+
+    .service-btn-display-desktop {
         display: flex;
     }
 
@@ -251,14 +254,6 @@ body {
         font-weight: 600;
 
         margin-right: 8px;
-    }
-
-    .menu-mobile__item {
-        margin-right: 32px;
-    }
-
-    .menu-mobile__item:last-child {
-        margin-right: 32px;
     }
 
     .visible-tablet {

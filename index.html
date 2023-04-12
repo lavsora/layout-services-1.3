@@ -14,54 +14,73 @@
 </head>
 
 <body>
-    <div class="menu-mobile">
-        <div class="burger">
-            <button class="menu-mobile__item item-service">
-                <img src="./image/icons/burger.svg" alt="">
-            </button>
-        </div>
-        <div class="connection">
-            <img src="./image/icons/logo.svg" alt="">
-            <div class="connection__connection-button connection__connection-button_connection-visible">
-                <button class="menu-mobile__item item-service">
-                    <img src="./image/icons/call.svg" alt="">
-                </button>
-                <button class="menu-mobile__item item-service">
-                    <img src="./image/icons/chat.svg" alt="">
-                </button>
-                <button class="menu-mobile__item item-service">
-                    <img src="./image/icons/profile.svg" alt="">
-                </button>
-            </div>
-        </div>
-        <div class="services">
-            <button class="menu-mobile__item item-service">
-                <img src="./image/icons/service.svg" alt="">
-            </button>
-            <button class="menu-mobile__item item-service">
-                <img src="./image/icons/checkstatus.svg" alt="">
-            </button>
-        </div>
-    </div>
-    <div class="content">
-        <div class="topic">
-            <div class="topic__title title">Услуги и сервисы</div>
-            <div class="services services-visible">
-                <div class="services__text">
-                    Оставить заявку
-                </div>
-                <button class="menu-mobile__item item-service">
-                    <img src="./image/icons/service.svg" alt="">
-                </button>
-                <div class="services__text">
-                    Статус ремонта
-                </div>
-                <button class="menu-mobile__item item-service">
-                    <img src="./image/icons/checkstatus.svg" alt="">
-                </button>
-            </div>
-        </div>
+    <nav class="topbar-menu">
 
+        <button class="btn">
+            <img src="./image/i-burger.svg" alt="">
+        </button>
+
+        <span class="topbar-menu__stick topbar-menu__stick--display-none-mobile"></span>
+
+        <a class="logotype-link" href="#">
+            <img class="logotype-link__image" src="./image/i-logo.svg" alt="">
+        </a>
+
+        <ul class="connection-btn connection-display-none-mobile list-reset">
+            <li>
+                <button class="btn">
+                    <img src="./image/i-call.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="btn">
+                    <img src="./image/i-chat.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="btn">
+                    <img src="./image/i-profile.svg" alt="">
+                </button>
+            </li>
+        </ul>
+
+        <span class="topbar-menu__stick"></span>
+
+        <ul class="service-btn list-reset">
+            <li>
+                <button class="btn">
+                    <img src="./image/i-service.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="btn">
+                    <img src="./image/i-checkstatus.svg" alt="">
+                </button>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="topic">
+        <h1 class="title topic__title">Услуги и сервисы</h1>
+
+        <ul class="service-btn service-btn-display-desktop list-reset">
+            <li>
+                <button class="btn">
+                    <span class="btn__text">Оставить заявку</span>
+                    <img class="btn__img" src="./image/i-service.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="btn">
+                    <span class="btn__text">Статус ремонта</span>
+                    <img class="btn__img" src="./image/i-checkstatus.svg" alt="">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
         <div class="menu-service">
             <a href="#" class="menu-service__link menu-service__link_active service-link">Ремонтируемые бренды</a>
             <a href="#" class="menu-service__link service-link">Ремонтируемые устройства</a>
@@ -81,12 +100,12 @@
                     очередь, советуют нас родным и близким.</span>
 
                 <div class="post_readmore readmore">
-                    <img class="post_readmore-icon" src="./image/icons/arrow-down.svg" alt="">
+                    <img class="post_readmore-icon" src="./image/i-arrow-down.svg" alt="">
                     Читать далее
                 </div>
             </div>
             <div class="post_image">
-                <img class="post_image-content" src="./image/content/cps.jpg" alt="Логотип">
+                <img class="post_image-content" src="./image/cps.jpg" alt="Логотип">
             </div>
         </div>
     </div>
