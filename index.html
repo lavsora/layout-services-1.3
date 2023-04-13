@@ -14,101 +14,105 @@
 </head>
 
 <body>
-    <nav class="topbar-menu">
+    <header>
+        <nav class="topbar-menu">
+            <button class="btn">
+                <img src="./image/i-burger.svg" alt="">
+            </button>
 
-        <button class="btn">
-            <img src="./image/i-burger.svg" alt="">
-        </button>
+            <span class="topbar-menu__stick topbar-menu__stick--display-none-mobile"></span>
 
-        <span class="topbar-menu__stick topbar-menu__stick--display-none-mobile"></span>
+            <a class="logotype-link" href="#">
+                <img class="logotype-link__image" src="./image/i-logo.svg" alt="">
+            </a>
 
-        <a class="logotype-link" href="#">
-            <img class="logotype-link__image" src="./image/i-logo.svg" alt="">
-        </a>
+            <ul class="connection-btn connection-display-none-mobile list-reset">
+                <li>
+                    <button class="btn">
+                        <img src="./image/i-call.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="btn">
+                        <img src="./image/i-chat.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="btn">
+                        <img src="./image/i-profile.svg" alt="">
+                    </button>
+                </li>
+            </ul>
 
-        <ul class="connection-btn connection-display-none-mobile list-reset">
-            <li>
-                <button class="btn">
-                    <img src="./image/i-call.svg" alt="">
-                </button>
-            </li>
-            <li>
-                <button class="btn">
-                    <img src="./image/i-chat.svg" alt="">
-                </button>
-            </li>
-            <li>
-                <button class="btn">
-                    <img src="./image/i-profile.svg" alt="">
-                </button>
-            </li>
-        </ul>
+            <span class="topbar-menu__stick"></span>
 
-        <span class="topbar-menu__stick"></span>
+            <ul class="service-btn list-reset">
+                <li>
+                    <button class="btn">
+                        <img src="./image/i-service.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="btn">
+                        <img src="./image/i-checkstatus.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <ul class="service-btn list-reset">
-            <li>
-                <button class="btn">
-                    <img src="./image/i-service.svg" alt="">
-                </button>
-            </li>
-            <li>
-                <button class="btn">
-                    <img src="./image/i-checkstatus.svg" alt="">
-                </button>
-            </li>
-        </ul>
+    <main>
+        <div class="topic">
+            <h1 class="title topic__title">Услуги и сервисы</h1>
 
-    </nav>
-
-    <div class="topic">
-        <h1 class="title topic__title">Услуги и сервисы</h1>
-
-        <ul class="service-btn service-btn-display-desktop list-reset">
-            <li>
-                <button class="btn">
-                    <span class="btn__text">Оставить заявку</span>
-                    <img class="btn__img" src="./image/i-service.svg" alt="">
-                </button>
-            </li>
-            <li>
-                <button class="btn">
-                    <span class="btn__text">Статус ремонта</span>
-                    <img class="btn__img" src="./image/i-checkstatus.svg" alt="">
-                </button>
-            </li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <div class="menu-service">
-            <a href="#" class="menu-service__link menu-service__link_active service-link">Ремонтируемые бренды</a>
-            <a href="#" class="menu-service__link service-link">Ремонтируемые устройства</a>
-            <a href="#" class="menu-service__link service-link">Цены на услуги</a>
-            <a href="#" class="menu-service__link service-link">Адреса сервисных центров</a>
-            <a href="#" class="menu-service__link service-link">Специальные цены</a>
-            <a href="#" class="menu-service__link service-link">Отзывы</a>
+            <ul class="service-btn service-btn-display-desktop list-reset">
+                <li>
+                    <button class="btn btn-topic">
+                        <span class="btn__text">Оставить заявку</span>
+                        <img class="btn__img" src="./image/i-service.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn-topic">
+                        <span class="btn__text">Статус ремонта</span>
+                        <img class="btn__img" src="./image/i-checkstatus.svg" alt="">
+                    </button>
+                </li>
+            </ul>
         </div>
+
+        <nav>
+            <ul class="menu-service">
+                <li><a href="#" class="service-link service-link_active ">Ремонтируемые бренды</a></li>
+                <li><a href="#" class="service-link">Ремонтируемые устройства</a></li>
+                <li><a href="#" class="service-link">Цены на услуги</a></li>
+                <li><a href="#" class="service-link">Адреса сервисных центров</a></li>
+                <li><a href="#" class="service-link">Специальные цены</a></li>
+                <li><a href="#" class="service-link">Отзывы</a></li>
+            </ul>
+        </nav>
+
         <div class="post">
-            <div class="post_text text">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br /><br />
+            <div class="post-content">
+                <p class="post-content_text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
 
-                <span class="visible-mobile">Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                    партнера</span><span class="visible-tablet">, что подтверждает большое
+                <p class="post-content_text post-content_text--display-mobile">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                    партнера</p>
+                <p class="post-content_text post-content_text--display-tablet">, что подтверждает большое
                     количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                    очередь, советуют нас родным и близким.</span>
+                    очередь, советуют нас родным и близким.</p>
 
-                <div class="post_readmore readmore">
-                    <img class="post_readmore-icon" src="./image/i-arrow-down.svg" alt="">
-                    Читать далее
-                </div>
+                <a class="readmore-btn">
+                    <img class="readmore-btn_icon" src="./image/i-arrow-down.svg" alt="">
+                    <p class="readmore-btn_text">Читать далее</p>
+                </a>
             </div>
-            <div class="post_image">
-                <img class="post_image-content" src="./image/cps.jpg" alt="Логотип">
-            </div>
+
+            <img class="post-img" src="./image/cps.jpg" alt="Логотип">
+
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
