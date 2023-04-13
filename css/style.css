@@ -2,9 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.body-bg {
     background-color: #F8F8F8;
 }
 
@@ -57,10 +55,6 @@ body {
     display: flex;
     justify-content: center;
     grid-gap: 16px;
-}
-
-.content {
-    background-color: #F8F8F8;
 }
 
 .topic__title {
@@ -292,6 +286,9 @@ body {
     .menu-service {
         flex-wrap: wrap;
         overflow-x: hidden;
+
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .services__text {
@@ -300,6 +297,10 @@ body {
         font-weight: 600;
 
         margin-right: 8px;
+    }
+
+    .post {
+        padding: 32px 32px 8px 32px;
     }
 
     .post-content_text--display-tablet {
