@@ -26,6 +26,10 @@ try {
     }
 
     showButton.addEventListener('click', showButtonClick)
+
+    window.addEventListener('resize', () => {
+        if (document.documentElement.clientWidth > 767) showButtonTextInitialize()
+    })
 } catch (error) {
-    
+
 }
