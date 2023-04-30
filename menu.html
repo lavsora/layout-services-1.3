@@ -7,62 +7,62 @@
 
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fonts/fonts.css">
+    <link rel="stylesheet" href="./css/fonts.css">
 
     <title>layout-menu-1.4</title>
 </head>
 <body>
-    <aside class="main-menu">
-        <nav class="topbar-menu-sidebar">
-            <button class="btn">
+    <aside class="aside">
+        <header class="aside__header">
+            <button class="circle-button">
                 <img src="./image/i-close.svg" alt="">
             </button>
 
-            <a class="logotype-link" href="#">
-                <img class="logotype-link__image" src="./image/i-logo.svg" alt="">
+            <a class="logo aside__logo" href="#">
+                <img class="logo__img" src="./image/i-logo.svg" alt="">
             </a>
 
-            <button class="btn">
+            <button class="circle-button">
                 <img src="./image/i-search.svg" alt="">
             </button>
-        </nav>
-        <nav>
-            <ul class="mid-menu-sidebar list-reset">
-                <li class="mid-menu-sidebar__item mid-menu-sidebar__item--active"><a class="mid-menu-sidebar__link mid-menu-sidebar__link--active" href="#">Ремонт техники</a></li>
-                <li class="mid-menu-sidebar__item"><a class="mid-menu-sidebar__link" href="#">Услуги и сервисы</a></li>
-                <li class="mid-menu-sidebar__item"><a class="mid-menu-sidebar__link" href="#">Корпоративным клиентам</a ></li>
-                <li class="mid-menu-sidebar__item"><a class="mid-menu-sidebar__link" href="#">Продавцам техники</a></li>
-                <li class="mid-menu-sidebar__item"><a class="mid-menu-sidebar__link" href="#">Партнерам</a></li>
-                <li class="mid-menu-sidebar__item"><a class="mid-menu-sidebar__link" href="#">Производителям</a></li>
-                <li class="mid-menu-sidebar__item"><a class="mid-menu-sidebar__link" href="#">Наши сервисные центры</a></li>
-                <li class="mid-menu-sidebar__item"><a class="mid-menu-sidebar__link" href="#">Контакты</a></li>
+        </header>
+        <nav class="nav">
+            <ul class="nav-list list-reset">
+                <li class="nav__item nav__item_active"><a class="nav__link nav__link_active" href="#">Ремонт техники</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Услуги и сервисы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Корпоративным клиентам</a ></li>
+                <li class="nav__item"><a class="nav__link" href="#">Продавцам техники</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Партнерам</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Производителям</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Наши сервисные центры</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="connection-btn connection-margin list-reset">
+        <ul class="connection-buttons aside__connection-buttons list-reset">
             <li>
-                <button class="btn">
+                <button class="circle-button">
                     <img src="./image/i-call.svg" alt="">
                 </button>
             </li>
             <li>
-                <button class="btn">
+                <button class="circle-button">
                     <img src="./image/i-chat.svg" alt="">
                 </button>
             </li>
             <li>
-                <button class="btn">
+                <button class="circle-button">
                     <img src="./image/i-profile.svg" alt="">
                 </button>
             </li>
         </ul>
         <div class="contacts">
-			<p class="contacts__mail"><a class="contacts__link" href="mailto:mail@cps.com">mail@cps.com</a></p>
-            <p class="contacts__phone"><a class="contacts__link" href="tel:+7 (800) 890-89-00">8 800 890 8900</a></p>
+			<p class="mail contacts__mail"><a class="contacts__link" href="mailto:mail@cps.com">mail@cps.com</a></p>
+            <p class="phone contacts__phone"><a class="contacts__link" href="tel:+7 (800) 890-89-00">8 800 890 8900</a></p>
         </div>
-        <ul class="language list-reset">
-            <li><button class="lang-btn lang-btn--active">RU</button></li>
-            <li><button class="lang-btn">EN</button></li>
-            <li><button class="lang-btn">CH</button></li>
+        <ul class="language-switch aside__language-switch list-reset">
+            <li><button class="language-switch__button language-switch__button_active">RU</button></li>
+            <li><button class="language-switch__button">EN</button></li>
+            <li><button class="language-switch__button">CH</button></li>
         </ul>
     </aside>
 </body>
