@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts/fonts.css">
+
+    <script type="module" src="./swiper.js" defer></script>
+    <script src="./index.js" defer></script>
+
+    <title>layout-slider-1.5</title>
+</head>
+
+<body class="body-bg">
+    <section class="section">
+        <div class="cards-header">
+            <h2 class="cards-title">Ремонт техники различных брендов</h2>
+        </div>
+
+        <div class="cards swiper">
+            <ul class="grid-cards list-reset swiper-wrapper">
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-lenovo.svg" alt="lenovo">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-samsung.svg" alt="samsung">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-apple.svg" alt="apple">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-bosch.svg" alt="bosch">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-hp.svg" alt="hp">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-acer.svg" alt="acer">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-sony.svg" alt="sony">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-viewsonic.svg" alt="viewsonic">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card swiper-slide">
+                    <img class="brand-card__img" src="./image/b-lenovo.svg" alt="lenovo">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card brand-card_display_none swiper-slide">
+                    <img class="brand-card__img" src="./image/b-samsung.svg" alt="samsung">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+                <li class="brand-card brand-card_display_none swiper-slide">
+                    <img class="brand-card__img" src="./image/b-apple.svg" alt="apple">
+                    <button class="brand-card__button"><img src="./image/i-arrow-left.svg"></button>
+                </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <button class="show-button show-button_display_none section__show-button">
+            <img class="show-button__icon" alt="">
+            <p class="show-button__text"></p>
+        </button>
+    </section>
+</body>
+
+</html>
