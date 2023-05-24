@@ -1,10 +1,15 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+import Swiper, { Pagination } from 'swiper';
+
+import 'swiper/scss';
+import 'swiper/scss/pagination';
 
 const swiper = new Swiper('.swiper', {
+    modules: [Pagination],
     slidesPerView: 'auto',
+    width: 240,
     spaceBetween: 16,
     breakpoints: {
-        767: {
+        768: {
             enabled: false,
             spaceBetween: 0,
         }

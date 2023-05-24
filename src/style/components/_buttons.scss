@@ -1,0 +1,122 @@
+.circle-button {
+    @include button;
+
+    border-radius: 50%;
+
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__image {
+        pointer-events: none;
+    }
+
+    @media (min-width: 1120px) {    
+        &__text {
+            font-family: $font-medium;
+            font-size: 16px;
+        
+            white-space: nowrap;
+        }
+        
+        &__img {
+            margin-right: 5px;
+        }
+    }
+
+    @media (min-width: 1280px) {    
+        &--hidden {
+            display: none;
+        }
+    }
+}
+
+.show-button {
+    display: flex;
+    align-items: center;
+    font-family: $font-medium;
+    font-style: normal;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__icon {
+        margin-right: 16px;
+        transition: transform 0.3s;
+    }
+    
+    &__text {
+        margin: 0;
+    }
+
+    &--hidden {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &.active &__icon {
+        transform: rotate(180deg);
+    }
+}
+
+.card-button {
+    @include button;
+
+    background: none;
+    background-image: url(./image/i-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.ellipse-button {
+    @include button;
+
+    width: fit-content;
+    height: 32px;
+    border-radius: 16px;
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    color: $color-bg-white;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__text {
+        margin: 0;
+        font-family: $font-bold;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        pointer-events: none;
+    }
+
+    &__icon {
+        filter: brightness(0) invert(1);
+        pointer-events: none;
+    }
+}

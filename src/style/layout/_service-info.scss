@@ -1,0 +1,70 @@
+.service-info {
+    &__title-section {
+        padding: 16px 0 16px 16px;
+
+        @media(min-width: 768px) {
+            padding-left: 24px;
+        }
+
+        @media(min-width: 1120px) {
+            padding-left: 32px;
+        }
+    }
+
+    &__price-info {
+        margin: 16px 0 40px 0;
+        padding: 0 16px 0 16px;
+
+        @media(min-width: 768px) {
+            margin: 24px 0 40px 0;
+            padding: 0 24px 0 24px;
+        }
+
+        @media(min-width: 1120px) {
+            margin: 32px 0 40px 0;
+            padding: 0 32px 0 32px;
+        }
+    }
+
+    &__description {
+        margin: 0;
+        font-family: $font-regular;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: $color-nav-link;
+        width: 90%;
+
+        margin-bottom: 16px;
+
+        @media(min-width: 768px) {
+            width: 420px;
+        }
+    }
+
+    &__offer {
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $color-nav-link;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            filter: opacity(50%);
+        }
+
+        &-img {
+            margin-left: 10px;
+        }
+    }
+
+    &__brands-list {
+        margin-bottom: 30px;
+    }
+
+    &__show-button {
+        margin-left: 24px;
+    }
+}

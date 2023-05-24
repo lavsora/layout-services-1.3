@@ -1,0 +1,15 @@
+.contacts {
+    &__link {
+        text-decoration: none;
+        color: $color-nav-link;
+    }
+
+    &__mail {
+        margin-top: 16px;
+    }
+
+    &__phone {
+        margin-top: 12px;
+    }
+}
+

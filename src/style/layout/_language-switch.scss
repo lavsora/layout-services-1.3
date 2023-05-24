@@ -1,0 +1,27 @@
+.language-switch {
+    @include list-reset;
+
+    display: flex;
+    align-items: center;
+    grid-gap: 7px;
+
+    &__button {
+        background: none;
+        border: none;
+        padding: 0;
+
+        cursor: pointer;
+        font-family: $font-medium;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-size: 16px;
+        color: $color-nav-link;
+
+        transition: filter 0.3s;
+
+        &--active,
+        &:hover {
+            filter: opacity(50%);
+        }
+    }
+}

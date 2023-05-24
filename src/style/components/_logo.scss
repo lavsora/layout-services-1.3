@@ -1,0 +1,15 @@
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    width: 100px;
+    height: 51px;
+    background-image: url('./image/i-logo.svg');
+    background-repeat: no-repeat;
+    transition: transform 0.3s; 
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

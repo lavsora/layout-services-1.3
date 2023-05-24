@@ -1,0 +1,161 @@
+.cards {
+    &-list {
+        @include list-reset;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 16px 24px;
+            height: 150px;
+
+            &.active {
+                height: auto;
+            }
+        }
+    }
+
+    &__cards-list {
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.brand-card {
+    box-sizing: border-box;
+    flex-basis: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    background-color: $color-bg-white;
+    border: 1px solid $color-stick;
+    border-radius: 6px;
+    height: 72px;
+    padding: 16px;
+
+    @media(min-width: 768px) {
+        flex-basis: 224px;
+    }
+
+    @media(min-width: 1120px) {
+        flex-basis: 240px;
+    }
+}
+
+.technic-card {
+    box-sizing: border-box;
+    flex-basis: 240px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: $color-bg-white;
+    border: 1px solid $color-stick;
+    border-radius: 6px;
+    height: 160px;
+    padding: 16px;
+
+    @media(min-width: 768px) {
+        flex-basis: 224px;
+    }
+
+    @media(min-width: 1120px) {
+        flex-basis: 240px;
+    }
+
+    &__text {
+        font-family: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    &__card-button {
+        align-self: flex-end;
+    }
+}
+
+.price-card {
+    @include list-reset;
+
+    box-sizing: border-box;
+    flex-basis: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+    background-color: $color-bg-white;
+    border: 1px solid $color-stick;
+    border-radius: 6px;
+    height: 200px;
+    padding: 16px;
+    position: relative;
+
+    @media(min-width: 768px) {
+        justify-content: space-between;
+        flex-basis: 0;
+        gap: 0;
+
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+
+        border-radius: 0;
+
+        flex-direction: row;
+        align-items: center;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__service {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &:last-child {
+            position: absolute;
+
+            bottom: 16px;
+            right: 16px;
+
+            @media (min-width: 768px) {
+                gap: 0;
+                position: static;
+            }
+        }
+
+        @media(min-width: 768px) {
+            &:first-child {
+                flex-basis: 50%;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+
+        font-family: $font-medium;
+        font-size: 14px;
+        line-height: 16px;
+        color: $color-text;
+
+        @media(min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__description {
+        margin: 0;
+
+        font-family: $font-regular;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: $color-nav-link;
+    }
+}

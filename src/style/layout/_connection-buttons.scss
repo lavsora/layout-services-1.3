@@ -1,0 +1,14 @@
+.connection-buttons {
+    display: flex;
+    grid-gap: 16px;
+
+    @include list-reset;
+
+    &--hidden {
+        display: none;
+
+        @media (min-width: 600px) {
+            display: flex;
+        }
+    }
+}

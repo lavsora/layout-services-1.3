@@ -1,0 +1,35 @@
+.topbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid $color-border;
+    background-color: $color-bg-white;
+
+    &--hidden {
+        @media (min-width: 1280px) {
+            display: none;
+        }
+    }
+
+    &__stick {
+        flex-shrink: 0;
+        width: 2px;
+        height: 32px;
+        background-color: $color-stick;
+    }
+
+    &__stick--hidden {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__logo {
+        @media (min-width: 768px) {
+            margin-right: 235px;
+        }
+    }
+}
